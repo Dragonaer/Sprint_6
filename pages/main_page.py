@@ -8,7 +8,7 @@ class MainPage(BasePage):
     @allure.step("Кликнуть на логотип Яндекса")
     def click_on_logo_yandex(self):
         self.click_on_element(MainPageLocators.YA_LOGO_BUTTON)
-        self.driver.switch_to.window(self.driver.window_handles[-1])
+        self.switch_to_window_by_index(-1)
         self.wait_for_page(url_dzen)
 
     @allure.step("Кликнуть на логотип Самокат")

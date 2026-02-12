@@ -55,4 +55,7 @@ class BasePage:
     @allure.step("Убрать всплывающее окно с куки")
     def click_on_cookie_button(self):
         self.click_on_element(MainPageLocators.COOKIE_BUTTON)
-    
+        
+    @allure.step("Переход на страницу по индексу")
+    def switch_to_window_by_index(self, index: int):
+        self.driver.switch_to.window(self.driver.window_handles[index])
