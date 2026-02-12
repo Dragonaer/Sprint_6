@@ -6,8 +6,7 @@ class OrderButtons:
     LAST_NAME = (By.XPATH, "//input[@placeholder='* Фамилия']") #поле Фамилия
     ADRESS = (By.XPATH, "//input[@placeholder='* Адрес: куда привезти заказ']") #поле Адреса доставки самоката
     SUBWAY_STATION_BUTTON = (By.XPATH, "//input[@placeholder='* Станция метро']") #поле со станцией метро
-    SUBWAY_STATION_1 = (By.XPATH, "//button//div[@class='Order_Text__2broi' and text()='Черкизовская']") # станция метро
-    SUBWAY_STATION_2 = (By.XPATH, "//button//div[@class='Order_Text__2broi' and text()='Чистые пруды']") # станция Чистые пруды
+    SUBWAY_STATION = (By.XPATH, "//button//div[@class='Order_Text__2broi' and text()='Черкизовская']") # станция метро
     NUMBER_PHONE = (By.XPATH, "//input[@placeholder='* Телефон: на него позвонит курьер']") #поле с контактным номером
 
     FARTHER_BUTTON = (By.XPATH, "//div//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Далее']") #кнопка Далее
